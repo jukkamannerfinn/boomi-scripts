@@ -48,6 +48,8 @@ import com.boomi.execution.ExecutionUtil;
 
  // to make these global variables within Groovy script class
 
+
+
 @Field String passenrg = "";
 @Field String pnrname = "";
 @Field String partner = "";
@@ -197,6 +199,7 @@ private void collectFTL() {
         if (strRow.length() > 5 && strRow.substring(0, 6).equals("ENDFTL")) {
             strRow = skipHeaders();
             lastpart = true;
+            strTime = "";
         }
         //bypass headers when section is changes
         //this is to prevent unnecessary passenger data to be added
