@@ -48,6 +48,8 @@ import com.boomi.execution.ExecutionUtil;
 
  // to make these global variables within Groovy script class
 
+
+
 @Field String passenrg = "";
 @Field String pnrname = "";
 @Field String partner = "";
